@@ -1,0 +1,24 @@
+{
+  "name": "code-template-cli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "codeTemplateCli": "bin/codeTemplateCli.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts/dev.js"
+  },
+  "keywords": [],
+  "author": "jiakaijie",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.14.49"
+  },
+  "dependencies": {
+    "commander": "^9.3.0",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^9.0.0",
+    "zx": "^7.0.7"
+  }
+}
