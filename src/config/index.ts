@@ -1,23 +1,21 @@
-import templateConfig1 from './templateConfig.json';
 
-export const templateConfig = templateConfig1;
-
-export type TemplateConfig = typeof templateConfig;
-
-export type TemplateConfigKeys = keyof TemplateConfig;
-
-interface NewTamplateArrObj {
-  name: string;
-  value: TemplateConfigKeys;
+export interface TemplateConfig{
+  [propName: string]: {
+    href: string;
+    desc: string;
+  }
 }
 
-const getNewTamplateConfig = (templateConfig: TemplateConfig): Array<NewTamplateArrObj> => {
+export interface NewTamplateArrObj {
+  name: string;
+  value: string;
+}
+
+export const getNewTamplateConfig = (templateConfig: TemplateConfig): Array<NewTamplateArrObj> => {
   return Object.keys(templateConfig).map((key) => {
     return {
       name: `${key} ------- ${templateConfig[key].desc}`,
-      value: key as TemplateConfigKeys
+      value: key
     };
   });
 }
-
-export const newTamplateArr = getNewTamplateConfig(templateConfig);
