@@ -67,7 +67,7 @@ const create = async (a, obj: ArgObj): Promise<void> => {
     removeSync(templateConfigDir);
 
     // 重新下载 配置文件
-    await downloadTemplateFromGitlab('git@github.com:jiakaijie/template-config.git', templateConfigDir);
+    await downloadTemplateFromGitlab('https://github.com/jiakaijie/template-config.git', templateConfigDir);
 
     const templateConfig: TemplateConfig = require(resolve(templateConfigDir, './config.json'));
 
