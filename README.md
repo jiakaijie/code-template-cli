@@ -1,10 +1,15 @@
 # code-template-cli
 
-快速创建项目 cli
+用来快速创建模版项目 cli
 
-## 环境
+## Node 环境
 
-### 开发
+node > 10.4
 
-node: v16.16.0
+## 使用方式
 
+codeTemplateCli create xxx（项目名称）
+
+按照提示选择模版
+
+创建完成 success
