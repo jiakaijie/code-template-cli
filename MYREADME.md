@@ -27,3 +27,13 @@ npm run build
 npm login 完成
 
 npm publish
+
+# 目录
+
+bin: 纯 Nodejs 执行脚本
+
+scripts: 纯打包脚本
+
+src: 源代码
+
+dist: 开发 + 打包发布代码
