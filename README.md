@@ -8,6 +8,12 @@ node > 10.4
 
 ## 使用方式
 
+### 下载
+
+npm i code-template-cli -g
+
+### 使用
+
 codeTemplateCli create xxx（项目名称）
 
 按照提示选择模版
