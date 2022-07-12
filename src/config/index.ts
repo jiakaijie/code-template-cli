@@ -1,13 +1,6 @@
-export const templateConfig = {
-  'create-react-app-ts-template': {
-    href: 'git@github.com:jiakaijie/create-react-app-ts-template.git',
-    desc: '基于 create-react-app 创建 + typescript 模版'
-  },
-  'vue3-ts-template': {
-    href: 'git@github.com:jiakaijie/vue3-ts-template.git',
-    desc: '基于 vue3 cli 创建 + typescript 模版'
-  }
-} as const;
+import templateConfig1 from './templateConfig.json';
+
+export const templateConfig = templateConfig1;
 
 export type TemplateConfig = typeof templateConfig;
 
