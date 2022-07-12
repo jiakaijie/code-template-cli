@@ -1,6 +1,6 @@
 {
   "name": "code-template-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "快速创建项目cli",
   "bin": {
     "codeTemplateCli": "bin/codeTemplateCli.js"
