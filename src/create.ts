@@ -77,7 +77,7 @@ const create = async (a, obj: ArgObj): Promise<void> => {
     // 根据交互选择模版下载
     await downloadTemplateFromGitlab(templateConfig[answers[templateName]].href, newFilePath);
     
-    console.log('成功');
+    console.log('创建成功');
   } catch (error) {
     console.error(error);
   }
