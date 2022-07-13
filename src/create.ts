@@ -10,6 +10,8 @@ const { resolve } = path;
 
 const downloadTemplateFromGitlab = async (href: string, dirName: string): Promise<void> => {
   await $`git clone ${href} ${dirName}`;
+  
+  await $`rm -rf ${dirName}/.git`;
 }
 
 const templateName = 'templateName' as const;
@@ -76,7 +78,7 @@ const create = async (a, obj: ArgObj): Promise<void> => {
 
     // 根据交互选择模版下载
     await downloadTemplateFromGitlab(templateConfig[answers[templateName]].href, newFilePath);
-    
+
     console.log('创建成功');
   } catch (error) {
     console.error(error);
